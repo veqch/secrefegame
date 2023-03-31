@@ -1,0 +1,691 @@
+body {
+  background: black;
+	cursor: url('../images/cursor_1.svg'), auto;
+}
+.body:active {
+  cursor: url('../images/cursor_2.svg'), grab;
+}
+/* первая страница */
+.button_2:hover {
+  opacity: 1;
+}
+.all {
+  position: relative;
+  width:154vh;
+  height:100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  background-image: url('../images/lend.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.screan {
+  position: absolute;
+  width:154vh;
+  height:100vh;
+  overflow: hidden;
+}
+.disclamer_1 {
+  position: absolute;
+  width: 98vh;
+  height: 13vh;
+  top: 43vh;
+  left: 29vh;
+  background-image: url('../images/disclamer_1.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  animation: disclamer1 0.3s linear alternate infinite;
+}
+.disclamer_2 {
+  position: absolute;
+  width: 98vh;
+  height: 13vh;
+  top: 43vh;
+  left: 29vh;
+  background-image: url('../images/disclamer_2.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  animation: disclamer2 0.3s linear alternate infinite;
+}
+.box {
+  position: relative;
+  width:154vh;
+  height:100vh;
+  margin: 0 auto;
+  display: block;
+  background-image: url('../images/first_screen_bg.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.button_1 {
+  position: absolute;
+  width: 43vh;
+  height: 10vh;
+  top: 72vh;
+  left: 57vh;
+  background-image: url('../images/button_1.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.button_2 {
+  position: absolute;
+  opacity: 0;
+  width: 43vh;
+  height: 10vh;
+  top: 72vh;
+  left: 57vh;
+  background-image: url('../images/button_2.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  transition: 0.1s;
+}
+/* вторая страница */
+.screan2 {
+  height: 200vw;
+  width: 100vw;
+  display: none;
+}
+.victory {
+  position: relative;
+  display: none;
+  width:154vh;
+  height:100vh;
+  margin: 0 auto;
+  background-image: url('../images/victory.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.first {
+  position: relative;
+  height: 47vw;
+  width: 100vw;
+}
+.second {
+  position: relative;
+  height: 86vw;
+  width: 100vw;
+}
+.third {
+  position: relative;
+  height: 73vw;
+  width: 100vw;
+}
+/* первый блок */
+.secrefe {
+  position: absolute;
+  height: 35vw;
+  width: 49vw;
+  top: 9vw;
+  left: 26vw;
+  background-image: url('../images/secrefe.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.round1 {
+  position:absolute;
+  height:20vw;
+  width:20vw;
+  top:-3vw;
+  left:-3vw;
+  background-image: url('../images/round1.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: round 2s linear infinite;
+  animation-play-state: paused;
+}
+.round1:hover {
+  animation-play-state: running;
+}
+.round2 {
+  position:absolute;
+  height:20vw;
+  width:20vw;
+  top:-10vw;
+  left:66vw;
+  background-image: url('../images/round2.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: round 2s linear infinite;
+  animation-play-state: paused;
+}
+.round2:hover {
+  animation-play-state: running;
+}
+.line1 {
+  position:absolute;
+  height: 18vw;
+  width: 24vw;
+  left: 76vw;
+  top: 1vw;
+  background-image: url('../images/line1.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.line2 {
+  position:absolute;
+  opacity: 0;
+  height: 18vw;
+  width: 24vw;
+  left: 76vw;
+  top: 1vw;
+  background-image: url('../images/line2.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.line2:hover {
+  opacity: 1;
+}
+.line3 {
+  position:absolute;
+  height:18vw;
+  width:30vw;
+  top: 12vw;
+  left:-4vw;
+  background-image: url('../images/line3.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.line4 {
+  position:absolute;
+  opacity: 0;
+  height:18vw;
+  width:30vw;
+  top: 12vw;
+  left:-4vw;
+  background-image: url('../images/line4.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.line4:hover {
+  opacity: 1;
+}
+
+/* второй блок */
+.hand {
+  position: absolute;
+  width: 21vw;
+  height: 23vw;
+  top:-0.5vw;
+  left: 9.7vw;
+  background-image: url('../images/hand.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.drag {
+  position: absolute;
+  width: 31vw;
+  height: 59vw;
+  left: 7vw;
+}
+.drag1 {
+  position: absolute;
+  width: 7vw;
+  height: 6.5vw;
+  top: 48vw;
+  left: 14vw;
+  background-image: url('../images/drag1.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.drag2 {
+  position: absolute;
+  width: 7vw;
+  height: 6.5vw;
+  top: 46vw;
+  left: 22vw;
+  background-image: url('../images/drag2.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.drag3 {
+  position: absolute;
+  width: 7vw;
+  height: 6.5vw;
+  top: 42vw;
+  left: 7vw;
+  background-image: url('../images/drag3.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.drag4 {
+  position: absolute;
+  width: 7vw;
+  height: 6.5vw;
+  top: 39vw;
+  left: 21vw;
+  background-image: url('../images/drag4.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.drag5 {
+  position: absolute;
+  width: 7vw;
+  height: 6.5vw;
+  top: 30vw;
+  left: 10vw;
+  background-image: url('../images/drag5.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.game1 {
+  position: absolute;
+  width: 8vw;
+  height: 57vw;
+  top: 1vw;
+  left: 40vw;
+  background-image: url('../images/game1.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: disclamer1 0.3s linear alternate infinite;
+}
+.game1:hover {
+  animation-play-state: paused;
+}
+.game2 {
+  position: absolute;
+  width: 8vw;
+  height: 57vw;
+  top: 1vw;
+  left: 40vw;
+  background-image: url('../images/game2.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: disclamer2 0.3s linear alternate infinite;
+}
+.game2:hover {
+  animation-play-state: paused;
+}
+.cotik {
+  position: absolute;
+  opacity: 1;
+  width: 14vw;
+  height: 14vw;
+  top: 46vw;
+  left: 50vw;
+  background-image: url('../images/cotik.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.cotik:hover {
+  opacity: 0;
+}
+.dranikss {
+  position: absolute;
+  width: 43vw;
+  height: 66vw;
+  left: 50vw;
+  top:20vw;
+}
+.draniki {
+  position: absolute;
+  width: 21vw;
+  height: 13vw;
+  top: 21vw;
+  left: 14vw;
+  background-image: url('../images/draniki.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.dranik1 {
+  position: absolute;
+  width: 8vw;
+  height: 4.5vw;
+  top: 19vw;
+  left: 17vw;
+  background-image: url('../images/dranik1.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.dranik4 {
+  position: absolute;
+  width: 8vw;
+  height: 4.5vw;
+  top: 14vw;
+  left: 28vw;
+  background-image: url('../images/dranik4.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.dranik5 {
+  position: absolute;
+  width: 8vw;
+  height: 4.5vw;
+  top: 7vw;
+  left: 17vw;
+  background-image: url('../images/dranik5.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.dranik6 {
+  position: absolute;
+  width: 8vw;
+  height: 4.5vw;
+  top: 15vw;
+  left: 8vw;
+  background-image: url('../images/dranik6.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.dranik7 {
+  position: absolute;
+  width: 8vw;
+  height: 4.5vw;
+  top: 9vw;
+  left: 27vw;
+  background-image: url('../images/dranik7.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.cup {
+  position: absolute;
+  width: 15vw;
+  height: 16vw;
+  top: 65vw;
+  left: 8vw;
+  background-image: url('../images/cup.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.cup:hover {
+  transform: scale(1.2);
+}
+.plate {
+  position: absolute;
+  width: 16vw;
+  height: 18vw;
+  top: 64vw;
+  left: 22vw;
+  background-image: url('../images/plate.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.plate:hover {
+  transform: scale(1.2);
+}
+.ice {
+  position: absolute;
+  width: 12vw;
+  height: 15vw;
+  top: 65vw;
+  left: 35vw;
+  background-image: url('../images/ice.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.ice:hover {
+  transform: scale(1.2);
+}
+.round3 {
+  position:absolute;
+  height:20vw;
+  width:20vw;
+  top:23vw;
+  left:-10vw;
+  background-image: url('../images/round3.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: round 2s linear infinite;
+  animation-play-state: paused;
+}
+.round3:hover {
+  animation-play-state: running;
+}
+.but3 {
+  position: absolute;
+  opacity: 0;
+  width: 5vw;
+  height: 5vw;
+  top: 80vw;
+  left: 43vw;
+  background-image: url('../images/but3.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.but4 {
+  position: absolute;
+  opacity: 0;
+  width: 5vw;
+  height: 5vw;
+  top: 80vw;
+  left: 87vw;
+  background-image: url('../images/but4.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+/* третий блок */
+.fox {
+  position: absolute;
+  width: 13vw;
+  height: 19vw;
+  top: 5vw;
+  left: 38vw;
+  background-image: url('../images/fox.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: animal1 2s linear infinite;
+}
+.fox:hover {
+  animation-play-state: paused;
+}
+.human {
+  position: absolute;
+  width: 13vw;
+  height: 13vw;
+  top: 7vw;
+  left: 52vw;
+  background-image: url('../images/human.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: animal2 1.5s linear infinite;
+}
+.human:hover {
+  animation-play-state: paused;
+}
+.cat {
+  position: absolute;
+  width: 13vw;
+  height: 12vw;
+  top: 8vw;
+  left: 65vw;
+  background-image: url('../images/cat.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: animal1 2s linear infinite;
+}
+.cat:hover {
+  animation-play-state: paused;
+}
+.frog {
+  position: absolute;
+  width: 13vw;
+  height: 19vw;
+  top: 5vw;
+  left: 78vw;
+  background-image: url('../images/frog.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: animal2 2s linear infinite;
+}
+.frog:hover {
+  animation-play-state: paused;
+}
+.b3 {
+  position: absolute;
+  width: 17vw;
+  height: 4vw;
+  top: 40vw;
+  left: 14vw;
+  background-image: url('../images/button_3.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.b4 {
+  position: absolute;
+  width: 17vw;
+  height: 4vw;
+  top: 36vw;
+  left: 14vw;
+  background-image: url('../images/button_4.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.b5 {
+  position: absolute;
+  width: 17vw;
+  height: 4vw;
+  top: 32vw;
+  left: 14vw;
+  background-image: url('../images/button_5.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.b6 {
+  position: absolute;
+  opacity: 0;
+  width: 17vw;
+  height: 4vw;
+  top: 40vw;
+  left: 14vw;
+  background-image: url('../images/button_6.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.b6:hover {
+  opacity: 1;
+}
+.b7 {
+  position: absolute;
+  opacity: 0;
+  width: 17vw;
+  height: 4vw;
+  top: 36vw;
+  left: 14vw;
+  background-image: url('../images/button_7.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.b7:hover {
+  opacity: 1;
+}
+.b8 {
+  position: absolute;
+  opacity: 0;
+  width: 17vw;
+  height: 4vw;
+  top: 32vw;
+  left: 14vw;
+  background-image: url('../images/button_8.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.b8:hover {
+  opacity: 1;
+}
+.but5 {
+  position: absolute;
+  opacity: 0;
+  width: 5vw;
+  height: 5vw;
+  top: 57vw;
+  left: 32vw;
+  background-image: url('../images/but5.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.but6 {
+  position: absolute;
+  opacity: 0;
+  width: 5vw;
+  height: 5vw;
+  top: 24vw;
+  left: 87vw;
+  background-image: url('../images/but6.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.round4 {
+  position:absolute;
+  height:20vw;
+  width:20vw;
+  top: 54vw;
+  left: 5vw;
+  background-image: url('../images/round4.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: round 2s linear infinite;
+  animation-play-state: paused;
+}
+.round4:hover {
+  animation-play-state: running;
+}
+.round5 {
+  position:absolute;
+  height:20vw;
+  width:20vw;
+  top:6vw;
+  left:-7vw;
+  background-image: url('../images/round5.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  animation: round 2s linear infinite;
+  animation-play-state: paused;
+}
+.round5:hover {
+  animation-play-state: running;
+}
+.line7 {
+  position:absolute;
+  opacity: 1;
+  height:18vw;
+  height: 12vw;
+  width: 22vw;
+  top: 55vw;
+  left: 78vw;
+  background-image: url('../images/line7.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.line8 {
+  position:absolute;
+  opacity: 0;
+  height: 12vw;
+  width: 22vw;
+  top: 55vw;
+  left: 78vw;
+  background-image: url('../images/line8.svg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.line8:hover {
+  opacity: 1;
+}
+@keyframes disclamer1 {
+ 0% { opacity: 100%};
+ 100% { opacity: 0%};
+}
+@keyframes disclamer2 {
+ 0% { opacity: 0%};
+ 100% { opacity: 100%};
+}
+@keyframes animal1 {
+ 0% {-webkit-transform: rotate(0deg);}
+ 25% {-webkit-transform: rotate(20deg);}
+ 50% {-webkit-transform: rotate(0deg);}
+ 75% {-webkit-transform: rotate(-20deg);}
+ 100% {-webkit-transform: rotate(0deg);}
+}
+@keyframes animal2 {
+ 0%   {-webkit-transform: rotate(0deg);}
+ 25%  {-webkit-transform: rotate(-20deg);}
+ 50%   {-webkit-transform: rotate(0deg);}
+ 75%  {-webkit-transform: rotate(20deg);}
+ 100%   {-webkit-transform: rotate(0deg);}
+}
+@keyframes round {
+ 0%   {-webkit-transform: rotate(0deg);}
+ 100%  {-webkit-transform: rotate(360deg);}
+}

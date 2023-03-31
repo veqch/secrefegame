@@ -1,0 +1,68 @@
+/* all */
+@media only screen and (min-device-width: 0px) and (max-device-width: 1024px) {
+  .box {
+    position: relative;
+    width:250vw;
+    height:65vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url('../images/first_screen_bg.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  .victory {
+    position: relative;
+    width:250vw;
+    height:65vw;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url('../images/victory.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  .disclamer_1 {
+    position: absolute;
+    width: 34vw;
+    height: 4vw;
+    top: 19vw;
+    left: 18vw;
+    background-image: url('../images/disclamer_1.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: disclamer1 0.3s linear alternate infinite;
+  }
+  .disclamer_2 {
+    position: absolute;
+    width: 34vw;
+    height: 4vw;
+    top: 19vw;
+    left: 18vw;
+    background-image: url('../images/disclamer_2.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    animation: disclamer2 0.3s linear alternate infinite;
+  }
+  .button_1 {
+    position: absolute;
+    width: 15vw;
+    height: 3vw;
+    top: 29vw;
+    left: 25vw;
+    background-image: url('../images/button_1.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  .button_2 {
+    position: absolute;
+    opacity: 0;
+    width: 15vw;
+    height: 3vw;
+    top: 29vw;
+    left: 25vw;
+    background-image: url('../images/button_2.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transition: 0.1s;
+  }
